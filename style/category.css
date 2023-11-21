@@ -1,0 +1,325 @@
+*,*::after,*::before{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /*perso nalizar cores*/
+  :root{
+    --cor-primary: #EC3237;
+    --cor-texto-main: #E2E2E2;
+    --cor-texto:#4A4A4A;
+    --cor-background-main: #000;
+    --cor-background: rgba(30, 30, 30, 0.74);
+    --cor-background-fooder: #0E0E0E;
+    --cor-cold-water:#0A98E9;
+    --cor-hot-water:#D27C2C;
+    --cor-sewage:#09B85A;
+    --cor-shadow1:0px 1px 24px 0px #181818;
+
+    
+  }
+  
+body {
+  font: 400 1rem 'Lalezar', sans-serif;
+  color: var(--cor-texto-main);
+  background: var(--cor-background-main);
+  background-size: 100%;
+}
+
+/*____________navbar_________________*/
+
+
+.navbar{
+display: flex;
+justify-content: center;
+justify-content: space-between;
+margin: 23px;
+padding:  8px;
+}
+
+.navbar .right{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-top: 8px;
+}   
+
+select {
+    width: 100px;
+    height: 28px;
+    font-size: 10px;
+    background: var(--cor-background-main);
+    border: 0.5px solid var(--cor-texto);
+    color: var(--cor-texto);
+    padding-right: 20px;
+}
+
+.navbar .left img{
+  width: 75.702px;
+  height: 40px;
+  flex-shrink: 0;
+  
+} 
+
+.navbar .right img{
+  width: 24px;
+  height: 24px;
+  justify-items: center;  
+} 
+
+.text {
+  width: 100%;
+  text-align: center;
+  padding: 2%;
+}
+
+/*_______início_______*/
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.content1 {
+    width: 798px;
+    height: 438px;
+    margin: 20px 0 40px 8px;
+    justify-content: right;
+    border: 1px solid var(--cor-texto);
+}
+
+.content1 img{
+  width: 24px;
+}
+
+.category{
+    background: var(--cor-sewage);
+    box-shadow: var(--cor-shadow1);
+    display: flex;
+    justify-content: left; 
+    background: var(--cor-background-main);
+    padding: 16px;
+    gap: 32px;
+}
+
+.category img{
+  width: 40px;
+}
+
+.title-cold,
+.title-hot,
+.title-sewage{
+    margin-top: 8px;
+  }
+  
+.title-cold h2,
+.title-hot h2,
+.title-sewage{
+    font-family: Lalezar;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.title-cold h2{
+  color: var(--cor-cold-water);
+}
+
+.title-hot h2{
+  color: var(--cor-hot-water);
+}
+.title-sewage h2{
+  color: var(--cor-sewage);
+}
+
+.title-cold h3,
+.title-hot h3,
+.title-sewage h3{
+  color:var(--cor-texto);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+  
+.content2 {
+    width: 380px;
+    height: 438px;
+    margin: 20px 8px 40px 32px;
+    justify-content: right;    
+}
+
+.content2 .description-cold,
+.content2 .description-hot,
+.content2 .description-sewage{
+  color: var(--cor-texto);
+  text-align: justify;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 33.6px; /* 140% */
+  padding-top: 16px;
+}
+
+.contente2 .category_hot h2{
+  color: var(--cor-hot-water);
+}
+
+/*______Detalhes______*/
+
+.detail h2{
+  color: var(--cor-texto-main);
+  font-family: Lalezar;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 8px 0 20px 40px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 40px 40px 32px;
+  justify-content: flex-start; /* Espaçamento entre colunas */
+}
+
+.card {
+  width: calc(33.33% - 20px); /* Calcula a largura de cada card com margens entre eles */
+  margin: 10px 8px 20px 8px;
+  border: 1px solid #595858;
+  padding: 10px;
+}
+
+.card:nth-last-child(-n+3) {
+  order: -1; /* Altera a ordem dos três últimos cards */
+}
+
+.card h2{
+  color: var(--cor-texto-main);
+  font-family: Lalezar;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-items: right;
+  padding-left: 216px;
+}
+
+.card h3{
+  color: var(--cor-texto-main);
+  font-family: Lalezar;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card p{
+  color: var(--cor-texto);
+  font-family: Inter ;
+  text-align: justify;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card a{
+  color: var(--cor-cold-water);
+  text-decoration: none;
+}
+ /*______footer____*/
+
+footer {
+  background: var(--cor-background-fooder);
+}
+
+footer .group-icone{
+  display: flex;
+  justify-content: right;
+  padding-right: 40px;
+  
+}
+
+footer .icone {
+  width: 190px;
+  background: var(--cor-background-main);
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+footer .logo{
+  width: 180px;
+  padding-left: 32px;
+  flex-shrink: 0;
+}
+
+footer .finish{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+}
+
+footer .ass{
+  color: var(--cor-texto);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 40px 16px 40px;
+}
+
+footer .ass a{
+  color: var(--cor-texto);
+}
+
+footer .link{
+  display: flex;
+  justify-content: right;
+  font-family: Lalezar;
+  width: 600px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 40px 16px 0  ;
+  gap:40px; 
+
+}
+
+footer .inicio{
+  color: var(--cor-texto);
+  text-decoration: none;
+
+}
+
+footer .fria{
+  color: var(--cor-cold-water);
+  text-decoration: none;
+}
+
+footer .quente{
+  color: var(--cor-hot-water);
+  text-decoration: none;
+}
+
+footer .esgoto{
+  color: var(--cor-sewage);
+  text-decoration: none;
+
+}
+
+/*____resposividade___*/
+
+@media (max-width: 767px) {
+  
+  
+}

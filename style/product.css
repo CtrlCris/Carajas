@@ -138,7 +138,7 @@ p{
   
 .title-cold h2,
 .title-hot h2,
-.title-sewage{
+.title-sewage h2{
     font-family: Lalezar;
     font-size: 20px;
     font-style: normal;
@@ -186,6 +186,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 8px;
+  margin-left: 16px;
   border: none;
 }
 
@@ -225,7 +226,7 @@ th {
   }
   
   footer .icone {
-    width: 190px;
+    width: 160px;
     background: var(--cor-background-main);
     display: flex;
     justify-content: center;

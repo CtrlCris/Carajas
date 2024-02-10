@@ -21,15 +21,17 @@
   }
   
   body {
-    font: 400 1rem 'Lalezar', sans-serif;
-    color: var(--cor-texto-main);
-    background: var(--cor-background);
-    background: url(../img/img//wallpapperFiltro.png) no-repeat;
-    background-size: cover;
-    background-attachment: fixed; /* Mantém a imagem fixa enquanto rola a página */
-    height: 100vh; /* Define a altura para ocupar a tela inteira */
-    margin: 0; /* Remove margens padrão */
-    overflow-y: hidden;
+      font: 400 1rem 'Lalezar', sans-serif;
+      color: var(--cor-texto-main);
+      background: var(--cor-background);
+      background-image: url(../img/img//wallpapperFiltro.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center; /* Centraliza o fundo */
+      height: 100vh;
+      margin: 0;
+      overflow-y: hidden;
+ 
   }
 
 /*____________home_________________*/
@@ -55,6 +57,7 @@ padding:  8px;
   align-items: center;
   gap: 24px;
   padding-top: 8px;
+  padding-right: 8px;
 } 
 
 .navbar .right img{
@@ -253,36 +256,31 @@ padding:  8px;
   #home {
     width: 100%;
   }
-  .navbar{
+    
+  .navbar {
     width: 100%;
-    margin: 32px;
-    padding:  8px;
-    }
-
-    .text{
-      padding: 40px 0 40px 0;
-    }
+    margin: 16px; 
+    padding: 8px;
+  }
     
-    .text p{
-      color:var(--cor-texto-main);
-      font-family: Lalezar;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      line-height: 50.4px; /* 140% */
-    }
+  .navbar .left img {
+    width: 50px; 
+  }
     
-    .text h1{
-      color:var(--cor-texto-main);
-      font-family: Lalezar;
-      font-size: 64px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      line-height: 89.6px; /* 140% */
-      letter-spacing: 16.32px;
-    }
-
+  .text {
+    padding: 20px 0; 
+  }
+    
+  .text p {
+    font-size: 16px; 
+    line-height: 24px; 
+  }
+    
+  .text h1 {
+    font-size: 40px; 
+    line-height: 56px; 
+    letter-spacing: 8px; 
+  }
 }
+    
 

@@ -9,9 +9,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200&family=Lalezar&display=swap" rel="stylesheet">
 </head>
-<body >
-    <div id="home">
-       <nav class="navbar">
+
+<body>
+    <div class="loading-screen">
+        <img src="/img/img/logo.png" alt="Logo" class="logo">
+        <div class="loading">
+            <div class="line-box">
+                <div class="line" id="loading-line"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal (inicialmente oculto) -->
+    <div class="home" style="display: none;">
+        <nav class="navbar">
             <div class="left">
                 <a class="logo" href="#home"><img src="/img/img/logo.png" alt="logo"></a>
             </div>
@@ -81,8 +92,10 @@
                <img src="../img/ícones/outline_local.svg" alt="Local"> 
                <h3>Av. Transamazônica, 2269b - Cidade Nova, Marabá - PA, 68501-660</h3>
             </a>
-        </div>  
-
+        </div>
+        <h1>Bem-vindo à tela principal!</h1>
     </div>
+
+    <script src="/javaScript/carregamento.js"></script>
 </body>
 </html>

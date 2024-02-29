@@ -18,7 +18,7 @@
             </div>
 
             <div class="right">
-                <select id="categoria" name="categoria">
+                <select id="categoria" name="categoria" onchange="redirecionarCategoria()">
                     <option value="escolha">Categoria</option>
                     <option value="/index/cold.html">Água fria</option>
                     <option value="/index/hot.html">Água quente</option>
@@ -69,30 +69,30 @@
         <div class="detail">
             <h2>Veja nossos produtos separadamente</h2>
             <div class="cards">
-                <div class="card">
+                <div class="card ">
                     <!-- Conteúdo do Card 1 -->
                     <h2>R$ 26,99</h2>
-                    <img src="#" alt="Objeto detalhado">
+                    <img src="/img/Products/agua_fria/TuboPvcSoldável9M/tuboPVCSoldavel9M0004.png" alt="">
                     <h3>TUBO DE PVC SOLDÁVEL 6 m</h3>
                     <p>Nosso Tubo de PVC Soldável de 6 metros é a escolha confiável para uma ampla variedade de <a href="#">saiba mais... </a> </p>
                 </div>
-                <div class="card">
-                    <!-- Conteúdo do Card 1 -->
+                <div class="card ">
+                    <!-- Conteúdo do Card 2 -->
                     <h2>R$ 26,99</h2>
-                    <img src="#" alt="Objeto detalhado">
+                    <img src="/img/Products/agua_fria/TuboPvcSoldável9M/tuboPVCSoldavel9M0006.png" alt="">
                     <h3>TUBO DE PVC SOLDÁVEL 6 m</h3>
                     <p>Nosso Tubo de PVC Soldável de 6 metros é a escolha confiável para uma ampla variedade de <a href="#">saiba mais... </a> </p>
                 </div>
-                <div class="card">
-                    <!-- Conteúdo do Card 1 -->
+                <div class="card ">
+                    <!-- Conteúdo do Card 3 -->
                     <h2>R$ 26,99</h2>
-                    <img src="#" alt="Objeto detalhado">
+                    <img src="/img/Products/agua_fria/TuboPvcSoldável9M/tuboPVCSoldavel9M0013.png" alt="">
                     <h3>TUBO DE PVC SOLDÁVEL 6 m</h3>
                     <p>Nosso Tubo de PVC Soldável de 6 metros é a escolha confiável para uma ampla variedade de <a href="#">saiba mais... </a> </p>
                 </div>
-               
             </div>
         </div>
+        
         <footer>
             <div class="group-icone">
                 <div class="icone">
@@ -123,12 +123,6 @@
 
         </footer>
     </div>
-    <script>
-       function redirecionar() {
-            var select = document.getElementById("categoria");
-            var selectedOption = select.options[select.selectedIndex].value;
-            window.location.href = selectedOption;
-        }
-    </script>
+    <script src="/javaScript/script.js"></script>
 </body>
 </html>

@@ -186,6 +186,7 @@ select {
   flex-wrap: wrap;
   padding: 0 40px 40px 32px;
   justify-content: flex-start; /* Espaçamento entre colunas */
+  
 }
 
 .card {
@@ -193,6 +194,13 @@ select {
   margin: 10px 8px 20px 8px;
   border: 1px solid #595858;
   padding: 10px;
+  overflow: hidden; 
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s ease;
 }
 
 .card:nth-last-child(-n+3) {
@@ -208,6 +216,7 @@ select {
   line-height: normal;
   align-items: right;
   padding-left: 216px;
+  margin-bottom: 0;
 }
 
 .card h3{
@@ -233,6 +242,7 @@ select {
   color: var(--cor-cold-water);
   text-decoration: none;
 }
+
  /*______footer____*/
 
 footer {

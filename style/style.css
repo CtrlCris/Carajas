@@ -158,12 +158,9 @@ padding:  8px;
 
 .select a{
   text-decoration: none;
-}
-
-.select .a {
   display: flex;
   justify-content: center;
-  margin: 8px ;  
+    
 }
 
 .category{
@@ -214,7 +211,7 @@ padding:  8px;
   color: var(--cor-sewage);
 }
 
-.card1 :hover{
+.cold :hover{
   box-shadow: var(--cor-shadow1);
 }
 
@@ -230,7 +227,7 @@ padding:  8px;
   background: var(--cor-cold-water);
 }
 
-.card2 :hover{
+.hot :hover{
   box-shadow:var(--cor-shadow2);
 }
 
@@ -246,7 +243,7 @@ padding:  8px;
   background: var(--cor-hot-water);
 }
 
-.card3 :hover{
+.sewage :hover{
   box-shadow: var(--cor-shadow3);
 }
 
@@ -301,33 +298,17 @@ padding:  8px;
 /*_____responsividade___*/
 
 @media (max-width: 768px) {
-  #home {
-    width: 100%;
-  }
-    
-  .navbar {
-    width: 100%;
-    margin: 16px; 
-    padding: 8px;
-  }
-    
-  .navbar .left img {
-    width: 50px; 
-  }
-    
-  .text {
-    padding: 20px 0; 
-  }
-    
-  .text p {
-    font-size: 16px; 
-    line-height: 24px; 
-  }
-    
-  .text h1 {
-    font-size: 40px; 
-    line-height: 56px; 
-    letter-spacing: 8px; 
-  }
+  
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  /* Estilos para desktops padrão */
+}
+
+@media only screen and (min-width: 1201px) {
+  /* Estilos para desktops maiores ou monitores widescreen */
+ 
+  
+
 }
 

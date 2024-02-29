@@ -16,9 +16,8 @@
             <div class="left">
                 <a class="logo" href="/index/index.html"><img src="/img/img/logo.png" alt="logo"></a>
             </div>
-
             <div class="right">
-                <select id="categoria" name="categoria">
+                <select id="categoria" name="categoria" onchange="redirecionarCategoria()">
                     <option value="escolha">Categoria</option>
                     <option value="/index/cold.html">Água fria</option>
                     <option value="/index/hot.html">Água quente</option>
@@ -132,12 +131,6 @@
 
         </footer>
     </div>
-    <script>
-        function redirecionar() {
-            var select = document.getElementById("agua_fria");
-            var selectedOption = select.options[select.selectedIndex].value;
-            window.location.href = "/index/cold.html";
-        }
-    </script>
+    <script src="/javaScript/script.js"></script>
 </body>
 </html>
